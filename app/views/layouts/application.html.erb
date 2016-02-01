@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <title>Check if Powerball Numbers Have Been Drawn</title>
+      <title>Check if Powerball Numbers Have Been Drawn Before</title>
       <%= stylesheet_link_tag    "application", media: "all" %>
       <%= javascript_include_tag "application" %>
       <%= csrf_meta_tags %>
+      <meta name="description" content="Ever wonder if your powerball numbers have been drawn before? Wonder no further. Check your lottery numbers now!">
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
     </head>
 
     <body>
+      <% if Rails.env.production? %>
+        <%= render partial: "common/analytics" %>
+      <% end %>
+
         <div class='content-wrapper'>
             <%= yield %>
         </div>
-    </body>
+    </body> 
 
 </html>
