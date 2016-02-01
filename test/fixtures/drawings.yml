@@ -1,0 +1,35 @@
+one:
+  game_id: 1
+  pick_one: 1
+  pick_two: 2
+  pick_three: 3
+  pick_four: 4
+  pick_five: 5
+  pick_six: 6
+  bonus_one: 7
+  bonus_two: 8
+  draw_date: 2016-01-29 18:14:56
+
+two:
+  game_id: 1
+  pick_one: 9
+  pick_two: 10
+  pick_three: 11
+  pick_four: 12
+  pick_five: 13
+  pick_six: 14
+  bonus_one: 15
+  bonus_two: 5
+  draw_date: 2016-01-29 18:14:56
+
+error:
+  game_id: 1
+  pick_one: 9
+  pick_two: 10
+  pick_three: nil
+  pick_four: 12
+  pick_five: 13
+  pick_six: 14
+  bonus_one: nil
+  bonus_two: 5
+  draw_date: 2016-01-29 18:14:56

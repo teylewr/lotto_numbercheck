@@ -1,0 +1,20 @@
+<h1> Check if your Powerball numbers have been drawn before!</h1>
+<h2> See if they have ever won any money!</h2>
+<h3 class='result-count'></h3>
+<%= form_tag('/checker', method: 'get',remote: true) do  %>
+
+    <div class='form-block'>   
+        <%= select_tag "draw[d1]", options_for_select((1..69)) %>
+        <%= select_tag "draw[d2]", options_for_select((1..69)) %>
+        <%= select_tag "draw[d3]", options_for_select((1..69)) %>
+        <%= select_tag "draw[d4]", options_for_select((1..69)) %>
+        <%= select_tag "draw[d5]", options_for_select((1..69)) %>
+        &nbsp;
+        <%= select_tag "b1", options_for_select((1..26)) %>
+    </div>
+    <br />
+
+   <div class='form-button-container'> <%= submit_tag("Check Now", :class => "join-but") %></div>
+<% end %>
+
+<div class='results'></div>

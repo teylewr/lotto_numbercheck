@@ -1,0 +1,12 @@
+$soft-green: #84BE6A;
+$light-grey: #d3d3d3;
+$soft-red: #cd5c5c;
+$off-white: #F5F3EE;
+@mixin rounded($radius:3px){
+ -moz-border-radius: $radius;
+ -webkit-border-radius: $radius;
+ -o-border-radius: $radius;
+ -ms-border-radius: $radius;
+ -khtml-border-radius: $radius;
+ border-radius: $radius;
+}

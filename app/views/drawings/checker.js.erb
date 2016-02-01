@@ -1,0 +1,9 @@
+$('.results').html('');
+
+<% @result_array.each do | r | %>
+  $('.results').append('<%=j render partial: 'result', locals: { result: r } %>');
+<% end %>
+
+
+$('.result-count').show();
+$('.result-count').html("You're numbers have won <%= @result_array.size %> times!");

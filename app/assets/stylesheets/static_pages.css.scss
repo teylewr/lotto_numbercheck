@@ -1,0 +1,38 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins";
+
+.content-wrapper{
+    max-width:900px;
+    margin:auto;
+    .form-block{
+        max-width:300px;
+        margin:auto;
+    }
+    .form-button-container{
+        margin:auto;
+        width:170px;
+        .join-but{
+            background:$soft-green;
+            padding:10px 20px;
+            color:#fff;
+            font-size:25px;
+            @include rounded(10px);
+        }
+    }
+    .result-count{
+        display:none;
+    }
+
+}
+
+//for mobile overrides
+@media screen and (max-width: 400px) {
+    h1{
+        font-size:18px;
+    }
+    h2{
+        font-size:16px;
+    }
+}

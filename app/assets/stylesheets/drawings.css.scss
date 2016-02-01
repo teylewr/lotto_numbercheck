@@ -1,0 +1,45 @@
+// Place all the styles related to the Drawings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "mixins";
+
+.result-block{
+    text-align:center;
+    margin:10px 0px;
+    .number-block{
+        @include rounded(50%);
+        display: inline-block;
+        background: #fff;
+        color: #000;
+        height: 25px;
+        width: 25px;
+        font-size: 20px;
+        border: 1px solid #000;
+        text-align: center;
+        padding: 20px;
+        &.matched{
+            background:$soft-green;
+        }
+        &.bonus{
+            background: $light-grey;
+            &.matched{
+                background: $soft-red;
+            }
+        }
+    }
+    .prize{
+        font-size:20px;
+        color:$soft-green;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .result-block{
+        .number-block{
+            height: 15px;
+            width: 15px;
+            font-size: 10px;
+            padding: 10px;
+        }
+    }
+}

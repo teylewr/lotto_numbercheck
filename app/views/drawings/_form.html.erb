@@ -1,0 +1,57 @@
+<%= form_for(@drawing) do |f| %>
+  <% if @drawing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@drawing.errors.count, "error") %> prohibited this drawing from being saved:</h2>
+
+      <ul>
+      <% @drawing.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :game_id %><br>
+    <%= f.number_field :game_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_one %><br>
+    <%= f.number_field :pick_one %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_two %><br>
+    <%= f.number_field :pick_two %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_three %><br>
+    <%= f.number_field :pick_three %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_four %><br>
+    <%= f.number_field :pick_four %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_five %><br>
+    <%= f.number_field :pick_five %>
+  </div>
+  <div class="field">
+    <%= f.label :pick_six %><br>
+    <%= f.number_field :pick_six %>
+  </div>
+  <div class="field">
+    <%= f.label :bonus_one %><br>
+    <%= f.number_field :bonus_one %>
+  </div>
+  <div class="field">
+    <%= f.label :bonus_two %><br>
+    <%= f.number_field :bonus_two %>
+  </div>
+  <div class="field">
+    <%= f.label :draw_date %><br>
+    <%= f.datetime_select :draw_date %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
