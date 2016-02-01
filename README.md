@@ -1,4 +1,4 @@
-# lotto numbercheck
+# Powerball Number Checker
 App for checking if lottery numbers have ever won any cash.
 
 Mobile Ready!
