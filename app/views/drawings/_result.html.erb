@@ -5,7 +5,7 @@
     <%= render partial: 'number', locals: { pick: result[:pick_three], bonus: false  } %>
     <%= render partial: 'number', locals: { pick: result[:pick_four], bonus: false  } %>
     <%= render partial: 'number', locals: { pick: result[:pick_five], bonus: false  } %>
-    bonus:
+    Bonus:
     <%= render partial: 'number', locals: { pick: result[:bonus_one], bonus: true  } %>  
     <span class='prize'>$<%= get_prize_amount({game_slug: @game.slug, matches_count: result[:matches_count], bonus_match: result[:bonus_match]}) %></span>
 </div>
