@@ -7,7 +7,7 @@
     max-width:900px;
     margin:auto;
     .form-block{
-        max-width:300px;
+        max-width:350px;
         margin:auto;
     }
     .form-button-container{
@@ -29,6 +29,11 @@
 
 //for mobile overrides
 @media screen and (max-width: 400px) {
+    .content-wrapper{
+        .form-block{
+            max-width:300px;
+        }
+    }
     h1{
         font-size:18px;
     }
