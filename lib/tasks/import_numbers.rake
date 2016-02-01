@@ -21,8 +21,9 @@ namespace :get_results do
                 end
 
             end
-
+            Drawing.reindex
             p "#{count} drawings have been added."
+            
         end
     end
 end 
