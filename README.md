@@ -1,2 +1,2 @@
-# lotto_numbercheck
+# lotto numbercheck
 App for checking if lottery numbers have ever won any cash.
